@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form oninput="x.value=(parseInt(m1.value)+parseInt(m2.value)+parseInt(m3.value))/3">
+        <fieldset>
+            <legend>Registration Form</legend>
+        <label>Name</label><br>
+        <input type="text" id="Name" placeholder="Enter Name"><br><br>
+        <label>E Mail</label><br>
+        <input type="text" name="Email"><br><br>
+        <label>Password</label><br>
+        <input type="Password" name="Password"><br><br>
+        <label>Birthday</label><br>
+        <input type="date" name="birthday" id="birthday"><br><br>
+        <label>Gender</label><br>
+        <input type="radio" id="Male" name="Gender" value="Male"> Male<br>
+        <input type="radio" id="Female" name="Gender" value="Female"> Female<br><br>
+        <label>Hobby</label><br>
+        <input type="Checkbox" id="Hobby" value="Reading"> Reading<br>
+        <input type="Checkbox" id="Hobby"  value="Sports"> Sports<br><br>
+        <label>ENTER YOUR MARKS</label><br>
+        <select name="Subject"  id="Subject">
+<option value="Maths">Maths</option>
+<option value="Science">Science</option>
+<option value="English">English</option>
+</select>
+<input type="number" id="m1" name="m1"><br><br>
+<select name="Subject1"  id="Subject1">
+    <option value="Maths">Maths</option>
+    <option value="Science">Science</option>
+    <option value="English">English</option>
+    </select>
+    <input type="number" id="m2" name="m2"><br><br>
+    <select name="Subject2"  id="Subject2">
+        <option value="Maths">Maths</option>
+        <option value="Science">Science</option>
+        <option value="English">English</option>
+        </select>
+        <input type="number" id="m3" name="m3"><br><br>
+        Average <output name="x" for="m1 m2 m3"></output>
+        <button>SUBMIT</button>
+        </fieldset>
+    </form>
+</body>
+</html>
